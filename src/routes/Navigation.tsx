@@ -3,6 +3,8 @@ import { Routes, Route, NavLink, Navigate } from 'react-router-dom';
 
 import logo from '../logo.svg'
 import { RegistrerPage } from '../03-forms/pages/RegistrerPage';
+import { FormikBasicPages } from '../03-forms/pages/FormikBasicPages';
+import { FormikYupPages } from '../03-forms/pages/FormikYupPages ';
 
 export const Navigation = () => {
     return (
@@ -18,7 +20,10 @@ export const Navigation = () => {
                             <NavLink to="/registrer" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>Registrer</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/users" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>Users</NavLink>
+                            <NavLink to="/formilBasic" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>FormikBasic</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/formilYup" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>FormikYup</NavLink>
                         </li>
                     </ul>
                 </nav>
@@ -26,7 +31,8 @@ export const Navigation = () => {
 
                 <Routes>
                     <Route path="registrer" element={ <RegistrerPage/> } />
-                    <Route path="users" element={ <h1>Users Page</h1> } />
+                    <Route path="formilBasic" element={ <FormikBasicPages/> } />
+                    <Route path="formilYup" element={ <FormikYupPages/> } />
                     <Route path="home" element={ <h1>Home Page</h1> } />
                     
                     <Route path="/*" element={ <Navigate to="/home" replace /> } />
