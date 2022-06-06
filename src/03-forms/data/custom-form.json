@@ -1,0 +1,68 @@
+[
+  {
+    "type": "input",
+    "name": "firstName",
+    "placeholder": "Alan",
+    "label": "First Name",
+    "value": "",
+     "validations": [
+        {
+            "type": "requiered",
+            "mesagge": "Campo requerido"
+        }
+    ]
+   
+  },
+  {
+    "type": "input",
+    "name": "lastName",
+    "placeholder": "Astorga",
+    "label": "Last Name",
+    "value": "",
+     "validations": [
+        {
+            "type": "requiered",
+            "mesagge": "Campo requerido"
+        }
+    ]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "placeholder": "example@gmail.com",
+    "label": "Email",
+    "value": "",
+     "validations": [
+        {
+            "type": "requiered",
+            "mesagge": "Campo requerido"
+        }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "favoritegame",
+    "label": "Favorite Game",
+    "value": "",
+     "validations": [
+        {
+            "type": "requiered",
+            "mesagge": "Campo requerido"
+        }
+    ],
+    "options": [
+      {
+        "label": "Super Smash",
+        "id": "1"
+      },
+      {
+        "label": "Metal Slug",
+        "id": "2"
+      },
+      {
+        "label": "Marvel Vs Camcomp",
+        "id": "3"
+      }
+    ]
+  }
+]
